@@ -1,11 +1,9 @@
-#ifndef __CIRCLE__H__
-#define __CIRCLE__h__
- 
-#define PI 3.14
+#include <iostream>
+#include <cstdlib>
+#include "circle.h"
 
-class Circle {
-    public:
-        Circle(void);
-};
+using namespace std;
 
-#endif
+Circle::Circle(void) {
+    cout << "Circle" << endl;
+}
