@@ -19,6 +19,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-  - task: CMake@1
-    inputs:
-      cmakeArgs: 'gcc -v'
+- task: CMake@1
+  inputs:
+    cmakeArgs: 'gcc -v'
