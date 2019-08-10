@@ -21,11 +21,9 @@ steps:
 
 - script: |
     pwd
+    ls -l
     gcc -v
+    make
   displayName: 'Run another script'
-
-- task: CMake@1
-  inputs:
-    cmakeArgs: 'gcc -v'
 
 
