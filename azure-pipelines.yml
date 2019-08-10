@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: MSBuild@1
-  inputs:
-    solution: '**/*.sln'
-    msbuildVersion: '16.0'
-    createLogFile: true
 
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
@@ -23,3 +18,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+  - task: CMake@1
+    inputs:
+      cmakeArgs: 'gcc -v'
